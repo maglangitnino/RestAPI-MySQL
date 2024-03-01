@@ -1,15 +1,19 @@
 export interface Product {
-    name : string,
-    price : number;
-    quantity : number;
-    image : string;
-
-}
-
-export interface UnitProduct extends Product {
-    id : string
-}
-
-export interface Products {
-    [key : string] : UnitProduct
-}
+    id: string;
+    name: string;
+    price: number;
+    quantity: number;
+    image: string;
+  }
+  
+  export interface Products {
+    [key: string]: UnitProduct;
+  }
+  
+  export interface UnitProduct {
+    id: string;
+    name: string;
+    price: number;
+    quantity: number;
+    image: string;
+  }
